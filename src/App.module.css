@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: rgb(246, 246, 246);
+}
+
+.container {
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-between;
+    gap: 8px;
+}
+
+.jokeWrapper {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    background: rgb(17, 172, 151);
+    font-size: 4em;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btnRefresh {
+    border: none;
+    padding: 12px 8px;
+    background: rgb(37, 36, 37);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btnRefresh:disabled {
+    cursor: default;
+    background: rgb(53, 53, 53);
+}
